@@ -29,7 +29,7 @@ export default defineConfig([
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
     ],
-    external: ["react", "tslib"],
+    external: ["react"],
   },
   {
     input: "src/index.ts",
