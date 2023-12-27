@@ -1,6 +1,6 @@
 {
   "name": "@4ndrs/test-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Testing component library for sharing",
   "scripts": {
     "build": "tsup"
