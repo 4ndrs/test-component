@@ -3,18 +3,13 @@
   "version": "0.0.1",
   "description": "Testing component library for sharing",
   "scripts": {
-    "build": "rollup --config rollup.config.ts --configPlugin typescript"
+    "build": "tsup"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/4ndrs/test-component.git"
@@ -26,14 +21,8 @@
   },
   "homepage": "https://github.com/4ndrs/test-component",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.5",
     "@types/react": "^18.2.45",
-    "rollup": "^4.9.1",
-    "rollup-plugin-dts": "^6.1.0",
-    "tslib": "^2.6.2",
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
